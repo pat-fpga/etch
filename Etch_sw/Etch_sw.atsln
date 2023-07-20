@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Etch_app", "Etch_app\Etch_app.cproj", "{F3CFFC81-3F61-4926-B99C-44A842DF6456}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3CFFC81-3F61-4926-B99C-44A842DF6456}.Debug|AVR.ActiveCfg = Debug|AVR
+		{F3CFFC81-3F61-4926-B99C-44A842DF6456}.Debug|AVR.Build.0 = Debug|AVR
+		{F3CFFC81-3F61-4926-B99C-44A842DF6456}.Release|AVR.ActiveCfg = Release|AVR
+		{F3CFFC81-3F61-4926-B99C-44A842DF6456}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

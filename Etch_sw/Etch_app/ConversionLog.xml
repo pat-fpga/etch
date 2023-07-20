@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='ConversionLog.xslt'?>
+<conversion conversiontitle="Upgrade Report - Atmel Software Framework Upgrade Log" subtitle1="Upgrading Modules From" subtitle2="to" date="Sunday, June 16, 2019" time="10:15 PM">
+  <general>
+    <log timestamp="06-16-2019 22-15-19">
+      <message>Unloading project</message>
+    </log>
+    <log timestamp="06-16-2019 22-15-19">
+      <message>Project unload complete.</message>
+    </log>
+    <log timestamp="06-16-2019 22-16-00">
+      <message>Backing up of project started.</message>
+    </log>
+    <log timestamp="06-16-2019 22-16-01">
+      <message>Project backup completed.</message>
+    </log>
+    <log timestamp="06-16-2019 22-16-01">
+      <message>Reloading project after backup.</message>
+    </log>
+    <log timestamp="06-16-2019 22-16-02">
+      <message>Project reload complete.</message>
+    </log>
+    <log timestamp="06-16-2019 22-16-03">
+      <message>Upgrading of project started.</message>
+    </log>
+    <log timestamp="06-16-2019 22-16-56">
+      <message>Project upgrade complete</message>
+    </log>
+  </general>
+  <revert versiontext="3.40.0" description="Reverting from version">
+    <moduleinfo name="Common build items for user board support templates">
+      <action description="Delete framework file 'src\ASF\common\boards\user_board\user_board.h'." result="ERROR" resulttext="The Delete operation failed. Could not find the path specified 'src\ASF\common\boards\user_board\user_board.h'. Resolution failed for folder: 'boards'" />
+      <action description="Remove folder '../src/ASF/common/boards/user_board' from include search path." result="INFO" resulttext="Folder path '../src/ASF/common/boards/user_board' is not present in the include path list 'preprocessingassembler.general.IncludePaths'. Remove Include Path operation cannot be performed." />
+      <action description="Remove defined symbol 'BOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+      <action description="Remove Assembler Flag '-DBOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Common board initialization support enabled">
+      <action description="Delete framework file 'src\ASF\common\boards\user_board\init.c'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic board support">
+      <action description="Delete framework file 'src\ASF\common\boards\board.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/boards' from include search path." result="INFO" resulttext="Folder path '../src/ASF/common/boards' is not present in the include path list 'preprocessingassembler.general.IncludePaths'. Remove Include Path operation cannot be performed." />
+    </moduleinfo>
+    <moduleinfo name="XMEGA compiler driver">
+      <action description="Delete framework file 'src\ASF\xmega\utils\progmem.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\assembler.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\bit_handling\clz_ctz.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\preprocessor\preprocessor.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\preprocessor\stringz.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\preprocessor\tpaste.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\compiler.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\status_codes.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\preprocessor\mrepeat.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\xmega\utils\assembler\gas.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/xmega/utils/preprocessor' from include search path." result="INFO" resulttext="Folder path '../src/ASF/xmega/utils/preprocessor' is not present in the include path list 'preprocessingassembler.general.IncludePaths'. Remove Include Path operation cannot be performed." />
+      <action description="Remove folder '../src/ASF/xmega/utils' from include search path." result="INFO" resulttext="Folder path '../src/ASF/xmega/utils' is not present in the include path list 'preprocessingassembler.general.IncludePaths'. Remove Include Path operation cannot be performed." />
+    </moduleinfo>
+    <moduleinfo name="Interrupt management - XMEGA implementation">
+      <action description="Delete framework file 'src\ASF\common\utils\interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\utils\interrupt\interrupt_avr8.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/utils' from include search path." result="INFO" resulttext="Folder path '../src/ASF/common/utils' is not present in the include path list 'preprocessingassembler.general.IncludePaths'. Remove Include Path operation cannot be performed." />
+    </moduleinfo>
+    <moduleinfo name="Generic Makefile for 8-bit AVR">
+      <action description="Delete framework file 'src\ASF\common\utils\make\Makefile.avr.in'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Part identification macros">
+      <action description="Delete framework file 'src\ASF\common\utils\parts.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/utils' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+  </revert>
+  <revert versiontext="3.40.0" description="Reverting from version" />
+  <update versiontext="3.46.0" description="Upgrading to version">
+    <moduleinfo name="Common build items for user board support templates">
+      <action description="Import framework file as 'src\ASF\common\boards\user_board\user_board.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/boards/user_board' to include search path." result="SUCCESS" resulttext="" />
+      <action description="Define symbol 'BOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DBOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Common board initialization support enabled">
+      <action description="Import framework file as 'src\ASF\common\boards\user_board\init.c'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic board support">
+      <action description="Import framework file as 'src\ASF\common\boards\board.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/boards' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="XMEGA compiler driver">
+      <action description="Import framework file as 'src\ASF\xmega\utils\progmem.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\assembler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\bit_handling\clz_ctz.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\preprocessor.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\stringz.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\tpaste.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\compiler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\status_codes.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\mrepeat.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\assembler\gas.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/xmega/utils/preprocessor' to include search path." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/xmega/utils' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Interrupt management - XMEGA implementation">
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt\interrupt_avr8.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/utils' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic Makefile for 8-bit AVR">
+      <action description="Import framework file as 'src\ASF\common\utils\make\Makefile.avr.in'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Part identification macros">
+      <action description="Import framework file as 'src\ASF\common\utils\parts.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/utils' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+  </update>
+  <update versiontext="3.46.0" description="Upgrading to version">
+    <moduleinfo name="Generic board support">
+      <action description="Import framework file as 'src\ASF\common\boards\board.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="LCD - ILI9341 Display Controller">
+      <action description="Import framework file as 'src\ASF\common\components\display\ili9341\ili9341.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\components\display\ili9341\ili9341_regs.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\components\display\ili9341\ili9341.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Calendar functionality">
+      <action description="Import framework file as 'src\ASF\common\services\calendar\calendar.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\calendar\calendar.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="GFX Color - Color Graphic Library">
+      <action description="Import framework file as 'src\ASF\common\services\gfx\gfx.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="GFX Color - System Font">
+      <action description="Import framework file as 'src\ASF\common\services\gfx\gfx_text.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\gfx\sysfont.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\gfx\sysfont.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\gfx\gfx_text.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_sysfont.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Memory Control Access Interface">
+      <action description="Import framework file as 'src\ASF\common\services\storage\ctrl_access\ctrl_access.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\storage\ctrl_access\ctrl_access.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_access.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic Makefile for 8-bit AVR">
+      <action description="Import framework file as 'src\ASF\common\utils\make\Makefile.avr.in'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="FatFS file system">
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\src\ff.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\00index_e.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\00index_j.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\dwrite.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\close.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\unlink.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\img\f3.png'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\img\f2.png'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\img\f1.png'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\mount.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\appnote.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\ATMEL-disclaimer.txt'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\chdrive.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\error.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\getcwd.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\open.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\dstat.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\rename.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\img\rwtest2.png'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\img\rwtest3.png'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\src\00readme.txt'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\dioctl.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\eof.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\read.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\chdir.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\fattime.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\utime.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\write.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\sfile.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\sdir.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\putc.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\forward.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\puts.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\readdir.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\size.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\img\f6.png'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\filename.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\updates.txt'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\img\f5.png'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\lseek.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\img\rwtest.png'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\sfileinfo.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\img\f4.png'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\getfree.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\opendir.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\img\layers3.png'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\dread.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\mkfs.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\sync.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\css_j.css'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\css_e.css'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\sfatfs.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\tell.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\chmod.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\stat.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\truncate.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\printf.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\gets.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\mkdir.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\rc.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\img\layers.png'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\dinit.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\doc\en\fdisk.html'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\src\ffconf.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\src\diskio.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\src\ff.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\src\integer.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="AC - Analog Comparator">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\ac\ac.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\ac\ac.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="CPU specific features">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\cpu\ccp.s'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\cpu\xmega_reset_cause.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\cpu\ccp.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="IOPORT - Input/Output Port Controller">
+      <action description="Define symbol 'IOPORT_XMEGA_COMPAT'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DIOPORT_XMEGA_COMPAT'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="NVM - Non Volatile Memory">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\nvm\nvm.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\nvm\nvm_asm.s'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\nvm\nvm.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="PMIC - Programmable Multi-level Interrupt Controller">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\pmic\pmic.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="RTC - Real Time Counter">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\rtc\rtc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\rtc\rtc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_rtc.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Sleep Controller driver">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\sleep\sleep.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SPI - Serial Peripheral Interface">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\spi\spi.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\spi\spi.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="TC - Timer Counter">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\tc\tc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\tc\tc.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="PWM service using timer/counter">
+      <action description="Import framework file as 'src\ASF\xmega\services\pwm\pwm.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\services\pwm\pwm.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="LCD - ILI9341 Display Controller">
+      <action description="Import framework file as 'src\Config\conf_ili9341.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SD/MMC stack on SPI interface">
+      <action description="Import framework file as 'src\ASF\common\components\memory\sd_mmc\sd_mmc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\components\memory\sd_mmc\sd_mmc_spi.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\components\memory\sd_mmc\sd_mmc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\components\memory\sd_mmc\sd_mmc_spi.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_sd_mmc.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SD/MMC/SDIO protocol definitions">
+      <action description="Import framework file as 'src\ASF\common\components\memory\sd_mmc\sd_mmc_protocol.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="System Clock Control - XMEGA A1U/A3U/A3BU/A4U/B/C implementation">
+      <action description="Import framework file as 'src\ASF\common\services\clock\xmega\sysclk.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\pll.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\genclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\osc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\xmega\pll.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\xmega\sysclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\xmega\osc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\sysclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_clock.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Delay routines">
+      <action description="Import framework file as 'src\ASF\common\services\delay\delay.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\delay\xmega\cycle_counter.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="GFX Color - Graphical Primitives (pixel, line, square, circle)">
+      <action description="Import framework file as 'src\ASF\common\services\gfx\gfx_generic.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\gfx\gfx_generic.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="GFX - SDT028ATFT LCD panel">
+      <action description="Import framework file as 'src\ASF\common\services\gfx\gfx_ili9341_sdt028atft.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\gfx\gfx_ili9341_sdt028atft.h'." result="SUCCESS" resulttext="" />
+      <action description="Define symbol 'CONF_GFX_ILI9341_SDT028ATFT=1'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DCONF_GFX_ILI9341_SDT028ATFT=1'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="GPIO - General purpose Input/Output">
+      <action description="Import framework file as 'src\ASF\common\services\gpio\gpio.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\gpio\xmega_gpio\xmega_gpio.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="IOPORT - General purpose I/O service">
+      <action description="Import framework file as 'src\ASF\common\services\ioport\xmega\ioport_compat.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\ioport\xmega\ioport_compat.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\ioport\xmega\ioport.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\ioport\ioport.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Sleep manager - XMEGA A/AU/B/D implementation">
+      <action description="Import framework file as 'src\ASF\common\services\sleepmgr\xmega\sleepmgr.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\sleepmgr\sleepmgr.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\sleepmgr\xmega\sleepmgr.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_sleepmgr.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SPI - XMEGA implementation">
+      <action description="Import framework file as 'src\ASF\common\services\spi\xmega_spi\spi_master.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\spi\spi_master.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\spi\xmega_spi\spi_master.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_spi_master.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB protocol definition">
+      <action description="Import framework file as 'src\ASF\common\services\usb\usb_atmel.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\usb_protocol.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB CDC Protocol">
+      <action description="Import framework file as 'src\ASF\common\services\usb\class\cdc\usb_protocol_cdc.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB Device CDC (Single Interface Device)">
+      <action description="Import framework file as 'src\ASF\common\services\usb\class\cdc\device\udi_cdc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\class\cdc\device\udi_cdc_desc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'atmel_devices_cdc.cat'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'atmel_devices_cdc.inf'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\class\cdc\device\udi_cdc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\class\cdc\device\udi_cdc_conf.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_usb.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB Device Stack Core (Common API)">
+      <action description="Import framework file as 'src\ASF\common\services\usb\udc\udc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\udc\udc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\udc\udd.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\udc\udc_desc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\usb\udc\udi.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Interrupt management - XMEGA implementation">
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt\interrupt_avr8.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Part identification macros">
+      <action description="Import framework file as 'src\ASF\common\utils\parts.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Supported ports of FatFS">
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-port-r0.09\diskio.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-port-r0.09\xmega\fattime.c'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="FATFS OEM code page to be used on the target system">
+      <action description="Import framework file as 'src\ASF\thirdparty\fatfs\fatfs-r0.09\src\option\ccsbcs.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_fatfs.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USB - Universal Serial Bus Interface (with sleepmgr)">
+      <action description="Import framework file as 'src\ASF\xmega\drivers\usb\usb_device.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\drivers\usb\usb_device.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="XMEGA compiler driver">
+      <action description="Import framework file as 'src\ASF\xmega\utils\progmem.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\assembler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\bit_handling\clz_ctz.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\preprocessor.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\stringz.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\tpaste.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\compiler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\status_codes.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\preprocessor\mrepeat.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\xmega\utils\assembler\gas.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+  </update>
+</conversion>
